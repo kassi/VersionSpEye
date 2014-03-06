@@ -58,6 +58,7 @@
 		CB13219F18C927E300B82924 /* versioneye-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "versioneye-16.png"; sourceTree = "<group>"; };
 		CB1321A018C927E300B82924 /* versioneye-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "versioneye-64.png"; sourceTree = "<group>"; };
 		CB1321A118C927E300B82924 /* versioneye-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "versioneye-128.png"; sourceTree = "<group>"; };
+		CB1321A718C929F800B82924 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -313,6 +314,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CB13218018C927C800B82924 /* Base */,
+				CB1321A718C929F800B82924 /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
