@@ -492,6 +492,7 @@
 				CB13219A18C927C800B82924 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB13219B18C927C800B82924 /* Build configuration list for PBXNativeTarget "VersionSpEyeTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +501,7 @@
 				CB13219D18C927C800B82924 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

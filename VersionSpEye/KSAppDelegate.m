@@ -16,7 +16,11 @@
     [statusItem setHighlightMode:YES];
     [statusItem setImage:statusImage];
     [statusItem setMenu: statusMenu];
-    [statusItem setToolTip:@"No Updates Available"];
+    [statusItem setToolTip:NSLocalizedString(@"No updates available", @"ToolTip of StatusBar Item")];
+}
+
+- (IBAction)showPreferences:(id)sender {
+    [_preferencesWindow makeKeyAndOrderFront:sender];
 }
 
 @end

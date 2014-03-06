@@ -15,6 +15,8 @@
     NSImage *statusImageHighlighted;
 }
 
-@property (assign) IBOutlet NSWindow *window;
+@property (unsafe_unretained) IBOutlet NSWindow *preferencesWindow;
+@property (weak) IBOutlet NSTextField *username;
+@property (weak) IBOutlet NSTextField *password;
 
 @end
