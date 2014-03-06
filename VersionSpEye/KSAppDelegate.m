@@ -10,9 +10,13 @@
 
 @implementation KSAppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
-    // Insert code here to initialize your application
+- (void)awakeFromNib {
+    statusImage = [NSImage imageNamed:@"versioneye-16"];
+    statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength];
+    [statusItem setHighlightMode:YES];
+    [statusItem setImage:statusImage];
+    [statusItem setMenu: statusMenu];
+    [statusItem setToolTip:@"No Updates Available"];
 }
 
 @end

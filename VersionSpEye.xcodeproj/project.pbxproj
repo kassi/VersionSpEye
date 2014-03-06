@@ -18,6 +18,10 @@
 		CB13218B18C927C800B82924 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB13216A18C927C800B82924 /* Cocoa.framework */; };
 		CB13219318C927C800B82924 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB13219118C927C800B82924 /* InfoPlist.strings */; };
 		CB13219518C927C800B82924 /* VersionSpEyeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB13219418C927C800B82924 /* VersionSpEyeTests.m */; };
+		CB1321A218C927E300B82924 /* versioneye-32.png in Resources */ = {isa = PBXBuildFile; fileRef = CB13219E18C927E300B82924 /* versioneye-32.png */; };
+		CB1321A318C927E300B82924 /* versioneye-16.png in Resources */ = {isa = PBXBuildFile; fileRef = CB13219F18C927E300B82924 /* versioneye-16.png */; };
+		CB1321A418C927E300B82924 /* versioneye-64.png in Resources */ = {isa = PBXBuildFile; fileRef = CB1321A018C927E300B82924 /* versioneye-64.png */; };
+		CB1321A518C927E300B82924 /* versioneye-128.png in Resources */ = {isa = PBXBuildFile; fileRef = CB1321A118C927E300B82924 /* versioneye-128.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,10 @@
 		CB13219018C927C800B82924 /* VersionSpEyeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VersionSpEyeTests-Info.plist"; sourceTree = "<group>"; };
 		CB13219218C927C800B82924 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CB13219418C927C800B82924 /* VersionSpEyeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VersionSpEyeTests.m; sourceTree = "<group>"; };
+		CB13219E18C927E300B82924 /* versioneye-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "versioneye-32.png"; sourceTree = "<group>"; };
+		CB13219F18C927E300B82924 /* versioneye-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "versioneye-16.png"; sourceTree = "<group>"; };
+		CB1321A018C927E300B82924 /* versioneye-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "versioneye-64.png"; sourceTree = "<group>"; };
+		CB1321A118C927E300B82924 /* versioneye-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "versioneye-128.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +135,10 @@
 		CB13217118C927C800B82924 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CB13219E18C927E300B82924 /* versioneye-32.png */,
+				CB13219F18C927E300B82924 /* versioneye-16.png */,
+				CB1321A018C927E300B82924 /* versioneye-64.png */,
+				CB1321A118C927E300B82924 /* versioneye-128.png */,
 				CB13217218C927C800B82924 /* VersionSpEye-Info.plist */,
 				CB13217318C927C800B82924 /* InfoPlist.strings */,
 				CB13217618C927C800B82924 /* main.m */,
@@ -234,7 +246,11 @@
 				CB13217518C927C800B82924 /* InfoPlist.strings in Resources */,
 				CB13218318C927C800B82924 /* Images.xcassets in Resources */,
 				CB13217B18C927C800B82924 /* Credits.rtf in Resources */,
+				CB1321A318C927E300B82924 /* versioneye-16.png in Resources */,
 				CB13218118C927C800B82924 /* MainMenu.xib in Resources */,
+				CB1321A218C927E300B82924 /* versioneye-32.png in Resources */,
+				CB1321A518C927E300B82924 /* versioneye-128.png in Resources */,
+				CB1321A418C927E300B82924 /* versioneye-64.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

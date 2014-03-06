@@ -8,7 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface KSAppDelegate : NSObject <NSApplicationDelegate>
+@interface KSAppDelegate : NSObject <NSApplicationDelegate> {
+    IBOutlet NSMenu* statusMenu;
+    NSStatusItem *statusItem;
+    NSImage *statusImage;
+    NSImage *statusImageHighlighted;
+}
 
 @property (assign) IBOutlet NSWindow *window;
 
