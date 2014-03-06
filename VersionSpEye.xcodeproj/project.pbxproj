@@ -59,6 +59,10 @@
 		CB1321A018C927E300B82924 /* versioneye-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "versioneye-64.png"; sourceTree = "<group>"; };
 		CB1321A118C927E300B82924 /* versioneye-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "versioneye-128.png"; sourceTree = "<group>"; };
 		CB1321A718C929F800B82924 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		CB1321A818C9315000B82924 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		CB1321A918C9315000B82924 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CB1321AA18C9315000B82924 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = de; path = de.lproj/Credits.rtf; sourceTree = "<group>"; };
+		CB1321AB18C9315000B82924 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +231,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = CB13215E18C927C800B82924;
 			productRefGroup = CB13216818C927C800B82924 /* Products */;
@@ -298,6 +303,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CB13217418C927C800B82924 /* en */,
+				CB1321A918C9315000B82924 /* de */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -306,6 +312,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CB13217A18C927C800B82924 /* en */,
+				CB1321AA18C9315000B82924 /* de */,
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
@@ -315,6 +322,7 @@
 			children = (
 				CB13218018C927C800B82924 /* Base */,
 				CB1321A718C929F800B82924 /* en */,
+				CB1321A818C9315000B82924 /* de */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -323,6 +331,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CB13219218C927C800B82924 /* en */,
+				CB1321AB18C9315000B82924 /* de */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
