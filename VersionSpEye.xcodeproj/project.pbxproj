@@ -22,6 +22,7 @@
 		CB1321A318C927E300B82924 /* versioneye-16.png in Resources */ = {isa = PBXBuildFile; fileRef = CB13219F18C927E300B82924 /* versioneye-16.png */; };
 		CB1321A418C927E300B82924 /* versioneye-64.png in Resources */ = {isa = PBXBuildFile; fileRef = CB1321A018C927E300B82924 /* versioneye-64.png */; };
 		CB1321A518C927E300B82924 /* versioneye-128.png in Resources */ = {isa = PBXBuildFile; fileRef = CB1321A118C927E300B82924 /* versioneye-128.png */; };
+		CB1321AD18CB33B600B82924 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1321AC18CB33B600B82924 /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		CB1321A918C9315000B82924 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CB1321AA18C9315000B82924 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = de; path = de.lproj/Credits.rtf; sourceTree = "<group>"; };
 		CB1321AB18C9315000B82924 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CB1321AC18CB33B600B82924 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB1321AD18CB33B600B82924 /* Security.framework in Frameworks */,
 				CB13216B18C927C800B82924 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,6 +111,7 @@
 		CB13216918C927C800B82924 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CB1321AC18CB33B600B82924 /* Security.framework */,
 				CB13216A18C927C800B82924 /* Cocoa.framework */,
 				CB13218918C927C800B82924 /* XCTest.framework */,
 				CB13216C18C927C800B82924 /* Other Frameworks */,

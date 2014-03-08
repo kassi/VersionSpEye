@@ -16,7 +16,7 @@
 }
 
 @property (unsafe_unretained) IBOutlet NSWindow *preferencesWindow;
-@property (weak) IBOutlet NSTextField *username;
-@property (weak) IBOutlet NSTextField *password;
+@property (weak) IBOutlet NSTextField *usernameField;
+@property (weak) IBOutlet NSTextField *passwordField;
 
 @end

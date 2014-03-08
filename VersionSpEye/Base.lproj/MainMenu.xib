@@ -14,9 +14,11 @@
         <customObject id="494" customClass="KSAppDelegate">
             <connections>
                 <outlet property="password" destination="CKi-j9-73g" id="Nzr-ud-mgs"/>
+                <outlet property="passwordField" destination="CKi-j9-73g" id="K52-km-IZ4"/>
                 <outlet property="preferencesWindow" destination="WhV-Vq-w1Q" id="rbd-W8-QbO"/>
                 <outlet property="statusMenu" destination="cvf-BM-dol" id="FaR-s6-GHf"/>
                 <outlet property="username" destination="gtJ-vB-oSB" id="uci-lo-C2T"/>
+                <outlet property="usernameField" destination="gtJ-vB-oSB" id="qZd-Eq-S9G"/>
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
@@ -25,7 +27,7 @@
                 <menuItem title="Preferences…" id="l12-va-lmX">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="showPreferences:" target="-1" id="yg9-y7-qw4"/>
+                        <action selector="makeKeyAndOrderFront:" target="WhV-Vq-w1Q" id="sSf-6Y-Hzq"/>
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="91F-UF-47R"/>
@@ -72,8 +74,11 @@
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
+                        <connections>
+                            <outlet property="delegate" destination="494" id="91l-xJ-eBb"/>
+                        </connections>
                     </textField>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CKi-j9-73g">
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CKi-j9-73g" customClass="NSSecureTextField">
                         <rect key="frame" x="128" y="199" width="200" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="fx8-fP-pKz">
@@ -81,6 +86,9 @@
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
+                        <connections>
+                            <outlet property="delegate" destination="494" id="278-4c-OAD"/>
+                        </connections>
                     </textField>
                 </subviews>
             </view>
