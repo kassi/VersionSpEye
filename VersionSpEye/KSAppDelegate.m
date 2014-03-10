@@ -19,15 +19,21 @@
     [statusItem setToolTip:NSLocalizedString(@"No updates available", @"ToolTip of StatusBar Item")];
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSDictionary *appDefaults = [NSDictionary dictionaryWithObjectsAndKeys:@"", @"username", nil];
+    NSDictionary *appDefaults = [NSDictionary dictionaryWithObjectsAndKeys:@"", @"username",
+                                 @"", @"apikey",
+                                 nil];
     [defaults registerDefaults:appDefaults];
     
     NSString *username = [defaults valueForKey:@"username"];
     [[self usernameField] setStringValue:username];
+    [[self apikeyField] setStringValue:[defaults valueForKey:@"apikey"]];
+    
+    [self readAndSetPasswordForUsername:username];
+}
+
+- (void)readAndSetPasswordForUsername:(NSString*)username {
     NSString *password = [self passwordForGenericServiceForUser:username];
-    if (password) {
-        [[self passwordField] setStringValue:password];
-    }
+    [[self passwordField] setStringValue:password];
 }
 
 - (IBAction)performMakeKeyAndOrderFront:(id)sender {
@@ -46,7 +52,7 @@
     if (status == CSSM_OK) {
         return [[NSString alloc] initWithUTF8String:passwordBuffer];
     } else {
-        return nil;
+        return @"";
     }
 }
 
@@ -70,11 +76,16 @@
 
 - (void)controlTextDidEndEditing:(NSNotification *)notification {
     NSTextField *field = [notification object];
+    NSString *identifier = [field identifier];
     
-    if (field == [self usernameField]) {
+    if (identifier) {
         NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
-        [defaults setObject:[field stringValue] forKey:@"username"];
+        [defaults setObject:[field stringValue] forKey:identifier];
         [defaults synchronize];
+        
+        if (field == _usernameField) {
+            [self readAndSetPasswordForUsername:[field stringValue]];
+        }
     }
     else if (field == _passwordField) {
         NSString *username = [[self usernameField] stringValue];
