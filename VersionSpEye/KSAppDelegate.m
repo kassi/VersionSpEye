@@ -30,6 +30,11 @@
     }
 }
 
+- (IBAction)performMakeKeyAndOrderFront:(id)sender {
+    [NSApp activateIgnoringOtherApps:YES];
+    [_preferencesWindow makeKeyAndOrderFront:sender];
+}
+
 - (NSString*)passwordForGenericServiceForUser:(NSString*)username {
     NSString *service = @"VersionSpEye";
     OSStatus status;

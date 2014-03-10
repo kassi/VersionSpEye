@@ -27,7 +27,7 @@
                 <menuItem title="Preferences…" id="l12-va-lmX">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="makeKeyAndOrderFront:" target="WhV-Vq-w1Q" id="sSf-6Y-Hzq"/>
+                        <action selector="performMakeKeyAndOrderFront:" target="494" id="aSL-Yq-9tT"/>
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="91F-UF-47R"/>
