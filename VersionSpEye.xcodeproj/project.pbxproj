@@ -18,11 +18,13 @@
 		CB13218B18C927C800B82924 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB13216A18C927C800B82924 /* Cocoa.framework */; };
 		CB13219318C927C800B82924 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB13219118C927C800B82924 /* InfoPlist.strings */; };
 		CB13219518C927C800B82924 /* VersionSpEyeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB13219418C927C800B82924 /* VersionSpEyeTests.m */; };
-		CB1321A218C927E300B82924 /* versioneye-32.png in Resources */ = {isa = PBXBuildFile; fileRef = CB13219E18C927E300B82924 /* versioneye-32.png */; };
-		CB1321A318C927E300B82924 /* versioneye-16.png in Resources */ = {isa = PBXBuildFile; fileRef = CB13219F18C927E300B82924 /* versioneye-16.png */; };
-		CB1321A418C927E300B82924 /* versioneye-64.png in Resources */ = {isa = PBXBuildFile; fileRef = CB1321A018C927E300B82924 /* versioneye-64.png */; };
-		CB1321A518C927E300B82924 /* versioneye-128.png in Resources */ = {isa = PBXBuildFile; fileRef = CB1321A118C927E300B82924 /* versioneye-128.png */; };
 		CB1321AD18CB33B600B82924 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1321AC18CB33B600B82924 /* Security.framework */; };
+		CB1321CC18CE8B6E00B82924 /* versioneye-16.png in Resources */ = {isa = PBXBuildFile; fileRef = CB1321C618CE8B6E00B82924 /* versioneye-16.png */; };
+		CB1321CD18CE8B6E00B82924 /* versioneye-32.png in Resources */ = {isa = PBXBuildFile; fileRef = CB1321C718CE8B6E00B82924 /* versioneye-32.png */; };
+		CB1321CE18CE8B6E00B82924 /* versioneye-64.png in Resources */ = {isa = PBXBuildFile; fileRef = CB1321C818CE8B6E00B82924 /* versioneye-64.png */; };
+		CB1321CF18CE8B6E00B82924 /* versioneye-128.png in Resources */ = {isa = PBXBuildFile; fileRef = CB1321C918CE8B6E00B82924 /* versioneye-128.png */; };
+		CB1321D018CE8B6E00B82924 /* versioneye-256.png in Resources */ = {isa = PBXBuildFile; fileRef = CB1321CA18CE8B6E00B82924 /* versioneye-256.png */; };
+		CB1321D118CE8B6E00B82924 /* versioneye-512.png in Resources */ = {isa = PBXBuildFile; fileRef = CB1321CB18CE8B6E00B82924 /* versioneye-512.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,16 +57,18 @@
 		CB13219018C927C800B82924 /* VersionSpEyeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VersionSpEyeTests-Info.plist"; sourceTree = "<group>"; };
 		CB13219218C927C800B82924 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CB13219418C927C800B82924 /* VersionSpEyeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VersionSpEyeTests.m; sourceTree = "<group>"; };
-		CB13219E18C927E300B82924 /* versioneye-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "versioneye-32.png"; sourceTree = "<group>"; };
-		CB13219F18C927E300B82924 /* versioneye-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "versioneye-16.png"; sourceTree = "<group>"; };
-		CB1321A018C927E300B82924 /* versioneye-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "versioneye-64.png"; sourceTree = "<group>"; };
-		CB1321A118C927E300B82924 /* versioneye-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "versioneye-128.png"; sourceTree = "<group>"; };
 		CB1321A718C929F800B82924 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		CB1321A818C9315000B82924 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		CB1321A918C9315000B82924 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CB1321AA18C9315000B82924 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = de; path = de.lproj/Credits.rtf; sourceTree = "<group>"; };
 		CB1321AB18C9315000B82924 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CB1321AC18CB33B600B82924 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CB1321C618CE8B6E00B82924 /* versioneye-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "versioneye-16.png"; sourceTree = "<group>"; };
+		CB1321C718CE8B6E00B82924 /* versioneye-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "versioneye-32.png"; sourceTree = "<group>"; };
+		CB1321C818CE8B6E00B82924 /* versioneye-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "versioneye-64.png"; sourceTree = "<group>"; };
+		CB1321C918CE8B6E00B82924 /* versioneye-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "versioneye-128.png"; sourceTree = "<group>"; };
+		CB1321CA18CE8B6E00B82924 /* versioneye-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "versioneye-256.png"; sourceTree = "<group>"; };
+		CB1321CB18CE8B6E00B82924 /* versioneye-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "versioneye-512.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,10 +148,12 @@
 		CB13217118C927C800B82924 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CB13219E18C927E300B82924 /* versioneye-32.png */,
-				CB13219F18C927E300B82924 /* versioneye-16.png */,
-				CB1321A018C927E300B82924 /* versioneye-64.png */,
-				CB1321A118C927E300B82924 /* versioneye-128.png */,
+				CB1321C618CE8B6E00B82924 /* versioneye-16.png */,
+				CB1321C718CE8B6E00B82924 /* versioneye-32.png */,
+				CB1321C818CE8B6E00B82924 /* versioneye-64.png */,
+				CB1321C918CE8B6E00B82924 /* versioneye-128.png */,
+				CB1321CA18CE8B6E00B82924 /* versioneye-256.png */,
+				CB1321CB18CE8B6E00B82924 /* versioneye-512.png */,
 				CB13217218C927C800B82924 /* VersionSpEye-Info.plist */,
 				CB13217318C927C800B82924 /* InfoPlist.strings */,
 				CB13217618C927C800B82924 /* main.m */,
@@ -254,13 +260,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB13217518C927C800B82924 /* InfoPlist.strings in Resources */,
+				CB1321D118CE8B6E00B82924 /* versioneye-512.png in Resources */,
+				CB1321CC18CE8B6E00B82924 /* versioneye-16.png in Resources */,
 				CB13218318C927C800B82924 /* Images.xcassets in Resources */,
+				CB1321CD18CE8B6E00B82924 /* versioneye-32.png in Resources */,
 				CB13217B18C927C800B82924 /* Credits.rtf in Resources */,
-				CB1321A318C927E300B82924 /* versioneye-16.png in Resources */,
+				CB1321D018CE8B6E00B82924 /* versioneye-256.png in Resources */,
 				CB13218118C927C800B82924 /* MainMenu.xib in Resources */,
-				CB1321A218C927E300B82924 /* versioneye-32.png in Resources */,
-				CB1321A518C927E300B82924 /* versioneye-128.png in Resources */,
-				CB1321A418C927E300B82924 /* versioneye-64.png in Resources */,
+				CB1321CF18CE8B6E00B82924 /* versioneye-128.png in Resources */,
+				CB1321CE18CE8B6E00B82924 /* versioneye-64.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
