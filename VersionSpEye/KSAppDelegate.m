@@ -109,4 +109,20 @@
         [statusItem setImage:statusImageDisabled];
     }
 }
+
+#pragma NSMenu delegate methods
+
+- (void)menuNeedsUpdate:(NSMenu *)menu
+{
+    NSMenuItem *errorMenuItem = [statusMenu itemWithTag:1];
+    NSString *errorDescription = [[KSVersionEyeAPI sharedAPI] errorDescription];
+    
+    NSUInteger flags = ([NSEvent modifierFlags] & NSDeviceIndependentModifierFlagsMask);
+    
+    BOOL shouldHideErrorMenuItem = !(flags == NSAlternateKeyMask && errorDescription);
+    
+    [errorMenuItem setTitle:errorDescription];
+    [errorMenuItem setHidden:shouldHideErrorMenuItem];
+}
+
 @end

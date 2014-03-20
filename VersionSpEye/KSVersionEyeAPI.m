@@ -9,7 +9,8 @@
 #import "KSVersionEyeAPI.h"
 
 @implementation KSVersionEyeAPI
-@synthesize apiKey = _apiKey;
+@synthesize apiKey           = _apiKey;
+@synthesize errorDescription = _errorDescription;
 
 NSString *apiBaseURL = @"https://www.versioneye.com/api";
 
@@ -37,6 +38,13 @@ NSString *apiBaseURL = @"https://www.versioneye.com/api";
     [request setHTTPMethod:@"GET"];
     
     NSData* data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+
+    if (error) {
+        self.errorDescription = [error localizedDescription];
+    } else {
+        self.errorDescription = nil;
+    }
+    
     if (data && [response statusCode] < 400) {
         return YES;
     }

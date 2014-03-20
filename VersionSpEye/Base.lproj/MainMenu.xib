@@ -376,9 +376,6 @@
                     </menu>
                 </menuItem>
             </items>
-            <connections>
-                <outlet property="delegate" destination="-2" id="gRV-LG-YlO"/>
-            </connections>
         </menu>
         <customObject id="494" customClass="KSAppDelegate">
             <connections>
@@ -394,6 +391,9 @@
         <customObject id="420" customClass="NSFontManager"/>
         <menu id="cvf-BM-dol">
             <items>
+                <menuItem title="Error" tag="1" hidden="YES" enabled="NO" id="fVL-mf-7R7">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
                 <menuItem title="Preferences…" id="l12-va-lmX">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
@@ -408,6 +408,9 @@
                     </connections>
                 </menuItem>
             </items>
+            <connections>
+                <outlet property="delegate" destination="494" id="ISm-e8-Mgb"/>
+            </connections>
         </menu>
         <window title="VersionSpEye Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="WhV-Vq-w1Q">
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>

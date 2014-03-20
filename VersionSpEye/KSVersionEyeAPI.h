@@ -11,6 +11,7 @@
 @interface KSVersionEyeAPI : NSObject
 
 @property (nonatomic, retain) NSString *apiKey;
+@property (nonatomic, retain) NSString *errorDescription;
 
 #pragma mark Creating a Singleton Object
 
