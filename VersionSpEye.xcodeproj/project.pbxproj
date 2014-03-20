@@ -25,6 +25,11 @@
 		CB1321CF18CE8B6E00B82924 /* versioneye-128.png in Resources */ = {isa = PBXBuildFile; fileRef = CB1321C918CE8B6E00B82924 /* versioneye-128.png */; };
 		CB1321D018CE8B6E00B82924 /* versioneye-256.png in Resources */ = {isa = PBXBuildFile; fileRef = CB1321CA18CE8B6E00B82924 /* versioneye-256.png */; };
 		CB1321D118CE8B6E00B82924 /* versioneye-512.png in Resources */ = {isa = PBXBuildFile; fileRef = CB1321CB18CE8B6E00B82924 /* versioneye-512.png */; };
+		CBCDF54218DA39FB00D8CDE9 /* KSVersionEyeAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCDF54118DA39FB00D8CDE9 /* KSVersionEyeAPI.m */; };
+		CBCDF54718DA42E600D8CDE9 /* versioneye-32-alt.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCDF54318DA42E600D8CDE9 /* versioneye-32-alt.png */; };
+		CBCDF54818DA42E600D8CDE9 /* versioneye-16-alt.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCDF54418DA42E600D8CDE9 /* versioneye-16-alt.png */; };
+		CBCDF54918DA42E600D8CDE9 /* versioneye-64-alt.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCDF54518DA42E600D8CDE9 /* versioneye-64-alt.png */; };
+		CBCDF54A18DA42E600D8CDE9 /* versioneye-128-alt.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCDF54618DA42E600D8CDE9 /* versioneye-128-alt.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +74,12 @@
 		CB1321C918CE8B6E00B82924 /* versioneye-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "versioneye-128.png"; sourceTree = "<group>"; };
 		CB1321CA18CE8B6E00B82924 /* versioneye-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "versioneye-256.png"; sourceTree = "<group>"; };
 		CB1321CB18CE8B6E00B82924 /* versioneye-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "versioneye-512.png"; sourceTree = "<group>"; };
+		CBCDF54018DA39FB00D8CDE9 /* KSVersionEyeAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSVersionEyeAPI.h; sourceTree = "<group>"; };
+		CBCDF54118DA39FB00D8CDE9 /* KSVersionEyeAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSVersionEyeAPI.m; sourceTree = "<group>"; };
+		CBCDF54318DA42E600D8CDE9 /* versioneye-32-alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "versioneye-32-alt.png"; sourceTree = "<group>"; };
+		CBCDF54418DA42E600D8CDE9 /* versioneye-16-alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "versioneye-16-alt.png"; sourceTree = "<group>"; };
+		CBCDF54518DA42E600D8CDE9 /* versioneye-64-alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "versioneye-64-alt.png"; sourceTree = "<group>"; };
+		CBCDF54618DA42E600D8CDE9 /* versioneye-128-alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "versioneye-128-alt.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +149,8 @@
 			children = (
 				CB13217C18C927C800B82924 /* KSAppDelegate.h */,
 				CB13217D18C927C800B82924 /* KSAppDelegate.m */,
+				CBCDF54018DA39FB00D8CDE9 /* KSVersionEyeAPI.h */,
+				CBCDF54118DA39FB00D8CDE9 /* KSVersionEyeAPI.m */,
 				CB13217F18C927C800B82924 /* MainMenu.xib */,
 				CB13218218C927C800B82924 /* Images.xcassets */,
 				CB13217118C927C800B82924 /* Supporting Files */,
@@ -154,6 +167,10 @@
 				CB1321C918CE8B6E00B82924 /* versioneye-128.png */,
 				CB1321CA18CE8B6E00B82924 /* versioneye-256.png */,
 				CB1321CB18CE8B6E00B82924 /* versioneye-512.png */,
+				CBCDF54318DA42E600D8CDE9 /* versioneye-32-alt.png */,
+				CBCDF54418DA42E600D8CDE9 /* versioneye-16-alt.png */,
+				CBCDF54518DA42E600D8CDE9 /* versioneye-64-alt.png */,
+				CBCDF54618DA42E600D8CDE9 /* versioneye-128-alt.png */,
 				CB13217218C927C800B82924 /* VersionSpEye-Info.plist */,
 				CB13217318C927C800B82924 /* InfoPlist.strings */,
 				CB13217618C927C800B82924 /* main.m */,
@@ -262,13 +279,17 @@
 				CB13217518C927C800B82924 /* InfoPlist.strings in Resources */,
 				CB1321D118CE8B6E00B82924 /* versioneye-512.png in Resources */,
 				CB1321CC18CE8B6E00B82924 /* versioneye-16.png in Resources */,
+				CBCDF54918DA42E600D8CDE9 /* versioneye-64-alt.png in Resources */,
+				CBCDF54818DA42E600D8CDE9 /* versioneye-16-alt.png in Resources */,
 				CB13218318C927C800B82924 /* Images.xcassets in Resources */,
+				CBCDF54A18DA42E600D8CDE9 /* versioneye-128-alt.png in Resources */,
 				CB1321CD18CE8B6E00B82924 /* versioneye-32.png in Resources */,
 				CB13217B18C927C800B82924 /* Credits.rtf in Resources */,
 				CB1321D018CE8B6E00B82924 /* versioneye-256.png in Resources */,
 				CB13218118C927C800B82924 /* MainMenu.xib in Resources */,
 				CB1321CF18CE8B6E00B82924 /* versioneye-128.png in Resources */,
 				CB1321CE18CE8B6E00B82924 /* versioneye-64.png in Resources */,
+				CBCDF54718DA42E600D8CDE9 /* versioneye-32-alt.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB13217E18C927C800B82924 /* KSAppDelegate.m in Sources */,
+				CBCDF54218DA39FB00D8CDE9 /* KSVersionEyeAPI.m in Sources */,
 				CB13217718C927C800B82924 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

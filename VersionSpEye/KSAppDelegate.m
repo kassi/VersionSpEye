@@ -7,14 +7,15 @@
 //
 
 #import "KSAppDelegate.h"
+#import "KSVersionEyeAPI.h"
 
 @implementation KSAppDelegate
 
 - (void)awakeFromNib {
     statusImage = [NSImage imageNamed:@"versioneye-16"];
+    statusImageDisabled = [NSImage imageNamed:@"versioneye-16-alt"];
     statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength];
-    [statusItem setHighlightMode:YES];
-    [statusItem setImage:statusImage];
+    [statusItem setImage:statusImageDisabled];
     [statusItem setMenu: statusMenu];
     [statusItem setToolTip:NSLocalizedString(@"No updates available", @"ToolTip of StatusBar Item")];
     
@@ -26,9 +27,15 @@
     
     NSString *username = [defaults valueForKey:@"username"];
     [[self usernameField] setStringValue:username];
-    [[self apikeyField] setStringValue:[defaults valueForKey:@"apikey"]];
+    NSString *apikey = [defaults valueForKey:@"apikey"];
+    [[self apikeyField] setStringValue:apikey];
+    
+    KSVersionEyeAPI *api = [KSVersionEyeAPI sharedAPI];
+    [api setApiKey:apikey];
     
     [self readAndSetPasswordForUsername:username];
+    
+    [self setStatusItemImage];
 }
 
 - (void)readAndSetPasswordForUsername:(NSString*)username {
@@ -95,4 +102,11 @@
     }
 }
 
+- (void)setStatusItemImage {
+    if ([[KSVersionEyeAPI sharedAPI] ping]) {
+        [statusItem setImage:statusImage];
+    } else {
+        [statusItem setImage:statusImageDisabled];
+    }
+}
 @end

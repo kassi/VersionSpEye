@@ -7,12 +7,14 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "KSVersionEyeAPI.h"
 
 @interface KSAppDelegate : NSObject <NSApplicationDelegate> {
     IBOutlet NSMenu* statusMenu;
     NSStatusItem *statusItem;
     NSImage *statusImage;
-    NSImage *statusImageHighlighted;
+    NSImage *statusImageDisabled;
+    KSVersionEyeAPI *versionEyeAPI;
 }
 
 @property (unsafe_unretained) IBOutlet NSWindow *preferencesWindow;
